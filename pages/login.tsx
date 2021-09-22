@@ -219,8 +219,8 @@ const Login = () => {
 };
 
 interface IFormInput {
-  identifier: String;
-  password: String;
+  identifier: string;
+  password: string;
   rememberMe: boolean;
 }
 

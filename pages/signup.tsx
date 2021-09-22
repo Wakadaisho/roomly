@@ -7,9 +7,9 @@ import nookies from "nookies";
 import AuthLayout from "@layouts/authLayout";
 
 interface IFormInput {
-  username: String;
-  email: String;
-  password: String;
+  username: string;
+  email: string;
+  password: string;
   rememberMe: boolean;
 }
 
@@ -250,7 +250,7 @@ const SignUp = () => {
 };
 
 const SIGNUP: TypedDocumentNode = gql`
-  mutation ($username: String!, $email: String!, $password: String!) {
+  mutation ($username: string!, $email: string!, $password: string!) {
     register(
       input: { username: $username, email: $email, password: $password }
     ) {

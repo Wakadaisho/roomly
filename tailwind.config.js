@@ -13,6 +13,13 @@ module.exports = {
         karla: ["Karla", "regular"],
         rubik: ["Rubik", "regular"],
       },
+      spacing: {
+        112: "28rem",
+        120: "30rem",
+        128: "32rem",
+        140: "35rem",
+        160: "40rem",
+      },
     },
   },
 

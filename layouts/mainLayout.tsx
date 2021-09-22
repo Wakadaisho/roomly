@@ -27,9 +27,8 @@ const MainLayout: NextPage<Props> = ({
         subTitle={subTitle}
       />
 
-      <div
-        className={`flex-grow sm:max-w-full lg:m-5 md:m-5 sm:m-0 border-gray-300 shadow-md rounded-md overflow-hidden`}
-      >
+      {/* {children} */}
+      <div className={`flex-grow sm:max-w-full  overflow-hidden`}>
         <div className="max-w-9xl mx-auto my-4">{children}</div>
       </div>
 

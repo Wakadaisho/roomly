@@ -6,9 +6,9 @@ export enum ImageSize {
 }
 
 export const responsiveImage = (
-  url: String | null,
+  url: string | null,
   size: ImageSize
-): String | null => {
+): string | null => {
   if (url === null) return null;
   return url.replace(/(.+\/)(.+$)/, `$1${size}$2`);
 };

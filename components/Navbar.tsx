@@ -7,11 +7,13 @@ import {
   UserIcon,
   QuestionMarkCircleIcon,
   LogoutIcon,
+  MinusSmIcon,
 } from "@heroicons/react/outline";
 import { useState } from "react";
 
 import Searchbar from "./Searchbar";
 import SlideOver from "./SlideOver";
+import {} from "@heroicons/react/solid";
 
 interface Props {
   user?: object;
@@ -21,13 +23,22 @@ interface Props {
 const Navbar: NextPage<Props> = ({ user, loading }) => {
   const [open, setOpen] = useState(false);
   const [navigation] = useState([
-    { name: "Home", href: "#", icon: HomeIcon },
-    { name: "Profile", href: "#", icon: UserIcon },
-    { name: "About", href: "#", icon: QuestionMarkCircleIcon },
+    { name: "Home", href: "/", icon: HomeIcon },
+    {
+      name: "Houses",
+      href: "/",
+      icon: MinusSmIcon,
+      subGroups: [
+        { name: "Add House", href: "/house/create", icon: MinusSmIcon },
+        { name: "Look for House", href: "/house", icon: MinusSmIcon },
+      ],
+    },
+    { name: "Profile", href: "/", icon: UserIcon },
+    { name: "About", href: "/", icon: QuestionMarkCircleIcon },
     { name: "Log out", href: "/logout", icon: LogoutIcon },
   ]);
 
-  console.log(user);
+  // console.log(user);
   return (
     <Menu
       as="div"

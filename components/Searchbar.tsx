@@ -8,7 +8,7 @@ const Searchbar: NextPage = () => {
       <div className="w-full flex justify-between align-center bg-figma-gray rounded-full focus-within:ring-2 focus-within:ring-figma-blue focus-within:border-transparent">
         <input
           type="text"
-          className="w-full bg-figma-gray px-3 text-black flex-auto rounded-full outline-none placeholder-gray-400 hover:placeholder-figma-blue"
+          className="w-full bg-figma-gray px-3 text-black flex-auto rounded-full outline-none placeholder-gray-400 "
           placeholder="Search house e.g. 1 bedroom"
         />
         <div className="self-center">
